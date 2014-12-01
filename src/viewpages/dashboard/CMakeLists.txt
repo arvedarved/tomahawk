@@ -1,3 +1,5 @@
+include_directories(${Boost_INCLUDE_DIRS})
+
 tomahawk_add_plugin(dashboard
     TYPE viewpage
     EXPORT_MACRO TOMAHAWK_VIEWPAGE_EXPORT_PRO

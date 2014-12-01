@@ -11,7 +11,7 @@ tomahawk_add_plugin(fdonotify
     SOURCES "${fdo_srcs}" LINK_LIBRARIES "${FDO_LINK_LIBRARIES}"
 )
 
-INCLUDE_DIRECTORIES( ${CMAKE_CURRENT_SOURCE_DIR} )
+INCLUDE_DIRECTORIES( ${CMAKE_CURRENT_SOURCE_DIR} ${LIBATTICA_INCLUDE_DIR})
 SET(mpris_srcs
     mpris/MprisPlugin.cpp
     )

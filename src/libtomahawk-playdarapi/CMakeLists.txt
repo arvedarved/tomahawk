@@ -14,6 +14,7 @@ list(APPEND ${TOMAHAWK_PLAYDARAPI_LIBRARY_TARGET}_UI
 include_directories(
     ${QXTWEB_INCLUDE_DIRS}
     ${THIRDPARTY_DIR}/qt-certificate-addon/src/
+    ${LIBATTICA_INCLUDE_DIR}
     )
 
 tomahawk_add_library(${TOMAHAWK_PLAYDARAPI_LIBRARY_TARGET}
