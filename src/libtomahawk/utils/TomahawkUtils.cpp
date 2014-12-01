@@ -23,6 +23,8 @@
 
 #include "config.h"
 
+#include <unistd.h>
+
 #include "BinaryExtractWorker.h"
 #include "Query.h"
 #include "SharedTimeLine.h"
