@@ -21,6 +21,8 @@
 
 #include "utils/TomahawkUtils.h"
 
+#include "unistd.h"
+
 #include "config.h"
 
 #include <unistd.h>
@@ -185,7 +187,7 @@ appDataDir()
         }
     #elif defined(Q_OS_MAC)
         path = appSupportFolderPath();
-    #elif defined(Q_OS_LINUX)
+    #elif defined(Q_OS_UNIX)
         path = QDir::home().filePath( ".local/share" );
     #else
         path = QCoreApplication::applicationDirPath();
